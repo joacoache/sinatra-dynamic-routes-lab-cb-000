@@ -10,7 +10,7 @@ class App < Sinatra::Base
       name.size.times { reversed << split_string.pop }
       reversed.join
      end
-     "#{reverse_name(@name)}"
+     "#{reverse_name(params[:name])}"
   end
 
 end
