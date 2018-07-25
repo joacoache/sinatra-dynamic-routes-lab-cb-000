@@ -24,7 +24,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    @word = params[:word1] + params[:word2] + params[:word3] + params[:word4] + params[:word5] + params[:word5]
+    @word = params[:word1] + "\n" + params[:word2] + "\n" + params[:word3] + "\n" + params[:word4] + "\n" + params[:word5]
     "#{@word}"
   end
 
