@@ -12,6 +12,11 @@ class App < Sinatra::Base
      "#{reverse_name(params[:name])}"
   end
 
+  get '/square/:number' do
+    @square = params[:number].to_i ** 2
+    ""
+  end
+
 end
 
 
